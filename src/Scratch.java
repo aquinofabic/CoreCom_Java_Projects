@@ -16,6 +16,20 @@ class Scratch {
         }
         return output;
     }
+
+    /*
+    Declare a method called method1 that returns integers in a list, and is public and static
+    and accepts (parameters) called input, which is integers in a list, and another integer variable called maximum {
+
+    Declare a variable called output which is a list of <integers> and assign = to a new Array of integers (which is empty).
+    Two-clause for loop, for each integer value, range from value to input, which increments by 1 {
+        if the value is less than or equal to the maximum {
+            method is to add the value to the output list
+            }
+        }
+        returns the output
+     */
+
     public static List<Integer> method2(List<Integer> input) {
         List<Integer> output = new ArrayList<Integer>();
         int fst, snd;
