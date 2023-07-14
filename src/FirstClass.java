@@ -1,3 +1,4 @@
+// 1.1 Basics
 /*
 BASIC SYNTAX
 Java is case sensitive.
@@ -26,10 +27,71 @@ subclass (child) - class that inherits from another class
 
  */
 
+// 1.2 Java Modifiers
+/*
+VARIABLE ACCESS MODIFIERS
+
+public - can be accessed by any other code
+private - can only be accessed by other methods in the class
+protected - can be accessed by the class, others in the same package, subclasses in another package
+(blank) - package private, can only be accessed by methods in the class and classes in the package
+
+
+VARIABLE NON ACCESS MODIFIERS
+
+final - cant be overridden or changed; its 'immutable'
+static - belongs to the class rather than any instances of the class in the form of an object
+abstract - used in abstract classes, no body is defined, a subclass defines the implementation/body
+transient - stops the value from being serialised.
+ */
+
 public class FirstClass {  // class
 
     public static void main(String[] args){  // -method signature
-        System.out.println("Hello World!");  // statement
+        System.out.println("Hello World!");  // statement  -method body
     }  // end of method
 
 }  // end of class
+
+// Code Structure
+/*
+public - access modifier
+static - non access modifier
+void - return type (returns nothing)
+main - method name
+(String[] args) - parameters
+
+We can call a method using its name
+    methodName()
+
+if it has a return type, we can use a method to assign to a variable.
+    int newNumber = returnNewNumber();
+ */
+
+
+// DECLARING VARIABLES
+/*
+Primitive: storing simple values like numbers, strings, booleans.
+Reference Types: storing complex objects like email messages
+    dont actually store objects in memory, they store reference (or address of) an object in memory
+    to use ref types, we need to allocate memory using the 'new' operator.
+    Date now = new Date();
+ */
+public class DeclaringVariables{
+    public static void main(String[] args){
+        byte = 30;
+        long viewsCount = 3_123_456L;
+        float price = 10.99F;
+        char letter = 'A';
+        boolean isEligible = true;
+        // terminate statements with semicolons
+    }
+}
+
+// Notes
+/*
+'' for characters
+"" for strings
+default integer type is int. To represent a long value, add L as a postfix (after)
+default floating-point type is double. To represent as a float, append F as a postfix.
+ */
