@@ -30,6 +30,7 @@ class Scratch {
         returns the output
      */
 
+
     public static List<Integer> method2(List<Integer> input) {
         List<Integer> output = new ArrayList<Integer>();
         int fst, snd;
@@ -40,7 +41,7 @@ class Scratch {
         }
         return output;
     }
-1
+
     public static int method3(List<Integer> input) {
         int result = 0;
         for (int candidate : input) {
@@ -70,17 +71,5 @@ class Scratch {
         }
         return integers;
     }
-    public static List<Integer> method5() {
-        Map<LocalDate, Boolean> holidays = getBankHolidays();
-        List<Integer> result = new ArrayList<Integer>();
-        LocalDate date, today;
-        date = today = LocalDate.now();
-        while (result.size() < 5) {
-            if (holidays.get(date)) {
-                result.add(Period.between(today, date).getDays());
-                date = date.plusDays(1);
-            }
-        }
-        return result;
-    }
+
 }
