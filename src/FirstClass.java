@@ -51,10 +51,29 @@ public class FirstClass {  // class
         System.out.println("Hello World!");  // statement  -method body
     }  // end of method
 
+    public class DeclaringVariables{
+        public static void main(String[] args){
+            // byte = 30;
+            long viewsCount = 3_123_456L;
+            float price = 10.99F;
+            char letter = 'A';
+            boolean isEligible = true;
+            // terminate statements with semicolons
+        }
+    }
 }  // end of class
 
 // Code Structure
 /*
+READING CODE:
+method signature
+    public static void main(String[] args){
+        Declare a method called main, which is public, static and returns nothing (void)
+        and accepts (parameters) strings of arguments.
+method body
+        Declare a variable that is a List of <Integer> that is assigned the value = ...
+        The method is, ..., we test,..., two/three clause for loop,...
+
 public - access modifier
 static - non access modifier
 void - return type (returns nothing)
@@ -77,16 +96,7 @@ Reference Types: storing complex objects like email messages
     to use ref types, we need to allocate memory using the 'new' operator.
     Date now = new Date();
  */
-public class DeclaringVariables{
-    public static void main(String[] args){
-        byte = 30;
-        long viewsCount = 3_123_456L;
-        float price = 10.99F;
-        char letter = 'A';
-        boolean isEligible = true;
-        // terminate statements with semicolons
-    }
-}
+
 
 // Notes
 /*
