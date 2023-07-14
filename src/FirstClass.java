@@ -30,6 +30,7 @@ subclass (child) - class that inherits from another class
 // 1.2 Java Modifiers
 /*
 VARIABLE ACCESS MODIFIERS
+These specify accessibility or 'scope' of a field, method, constructor, or class
 
 public - can be accessed by any other code
 private - can only be accessed by other methods in the class
@@ -43,6 +44,25 @@ final - cant be overridden or changed; its 'immutable'
 static - belongs to the class rather than any instances of the class in the form of an object
 abstract - used in abstract classes, no body is defined, a subclass defines the implementation/body
 transient - stops the value from being serialised.
+ */
+
+// 1.3 Classes and Objects
+/*
+Class - template for creating objects
+
+    FIELD - variable where the scope is the whole class
+public class Person { - we have a concept of a person
+    private String name; - it has a name
+
+        CONSTRUCTOR
+    public Person (String name) { - when we create one we have to supply a name
+        this.name - name;
+    }
+        METHOD
+    public String getName() { - we can then as the person what it's name is
+        return name;
+    }
+}
  */
 
 public class FirstClass {  // class
