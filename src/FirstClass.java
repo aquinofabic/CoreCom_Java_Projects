@@ -143,15 +143,15 @@ E.g:
 
 public class Person {
     private String name;     // private = restricted access
+
+    // Setter
+    public void String setName(String newName) {
+        this.name = newName;
+    }
     
     // Getter
     public String getName() {
         return name;
-    }
-    
-    // Setter
-    public void String setName(String newName) {
-        this.name = newName;
     }
 }
 
