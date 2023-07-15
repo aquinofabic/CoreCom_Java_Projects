@@ -140,7 +140,7 @@ Note: name is declared private, we cannot access it from outside this class
 Once the getter and setter have been defined, we can use it in our main file.
 
 E.g:
-
+// Constructor
 public class Person {
     private String name;     // private = restricted access
 
@@ -155,6 +155,10 @@ public class Person {
     }
 }
 
+NOTE: If you try to return a value from a method that is declared void, you will get a compiler error.
+    Any method that is not declared void must contain a return statement with a corresponding return value, like this: return returnValue;
+    
+
 In main file:
 
 public static void main(String[] args) {
@@ -164,6 +168,10 @@ public static void main(String[] args) {
 }
 */
 
+// 1.6 Constructors
+/*
+Add info here
+*/
 
 // Notes
 /*
