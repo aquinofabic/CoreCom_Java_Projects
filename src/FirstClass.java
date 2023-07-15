@@ -108,7 +108,7 @@ if it has a return type, we can use a method to assign to a variable.
  */
 
 
-// DECLARING VARIABLES
+// 1.4 Declaring Variables
 /*
 Primitive: storing simple values like numbers, strings, booleans.
 Reference Types: storing complex objects like email messages
@@ -118,7 +118,7 @@ Reference Types: storing complex objects like email messages
  */
 
 
-// ENCAPSULATION
+// 1.5 Encapsulation
 /*
 Makes sure 'sensitive' data is hidden from users.
 
