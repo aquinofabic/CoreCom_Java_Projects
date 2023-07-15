@@ -118,6 +118,53 @@ Reference Types: storing complex objects like email messages
  */
 
 
+// ENCAPSULATION
+/*
+Makes sure 'sensitive' data is hidden from users.
+
+METHOD
+1. Declare class variables/attributes as 'private'
+2. Provide public get and set methods to access and update value of private variable
+
+GET AND SET
+Note: private variables can only be accessed within the same class.
+    Only possible to access if we provide public get and set methods.
+
+    get method returns the value of the variable name
+
+    set method takes a parameter (newName) and assigns it to the name variable.
+    this keyword is used to refer to the current object.
+
+Note: name is declared private, we cannot access it from outside this class 
+
+Once the getter and setter have been defined, we can use it in our main file.
+
+E.g:
+
+public class Person {
+    private String name;     // private = restricted access
+    
+    // Getter
+    public String getName() {
+        return name;
+    }
+    
+    // Setter
+    public void String setName(String newName) {
+        this.name = newName;
+    }
+}
+
+In main file:
+
+public static void main(String[] args) {
+    Person p1 = new Person();             // access Person class, assign a new person using Person(); method
+    p1.setName("John");                   // setName method for p1
+    System.out.println(p1.getName());     // once name is set, use getName method
+}
+*/
+
+
 // Notes
 /*
 '' for characters
