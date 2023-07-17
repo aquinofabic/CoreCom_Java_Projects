@@ -38,12 +38,16 @@ protected - can be accessed by the class, others in the same package, subclasses
 (blank) - package private, can only be accessed by methods in the class and classes in the package
 
 
+
 VARIABLE NON ACCESS MODIFIERS
 
 final - cant be overridden or changed; its 'immutable'
 static - belongs to the class rather than any instances of the class in the form of an object
 abstract - used in abstract classes, no body is defined, a subclass defines the implementation/body
+
 transient - stops the value from being serialised.
+synchronized - makes the method thread safe (can also be applied to blocks of code)
+default - used in interfaces to provide default behaviour for implementing classes
  */
 
 // 1.3 Classes and Objects
@@ -120,7 +124,18 @@ Reference Types: storing complex objects like email messages
 
 // 1.5 Encapsulation
 /*
-Makes sure 'sensitive' data is hidden from users.
+
+Objects "encapsulates data (through fields) and behaviour on the data (through methods) inside themselves
+These can then be passed as a single unit. Should be a boundary, no worry about how it works internally, we can just use it
+The "interface" of each object is its public members (Methods, Fields, Constructors).
+Chosen such that:
+    - Irrelevant details are hidden from consumers
+    - Invariants are preserved
+    - Easy to use the class correctly
+    - Class can be developed further without wide-ranging consequences
+In particular, fields should be PRIVATE, accessed through accessor methods.
+
+
 
 METHOD
 1. Declare class variables/attributes as 'private'
@@ -130,10 +145,10 @@ GET AND SET
 Note: private variables can only be accessed within the same class.
     Only possible to access if we provide public get and set methods.
 
-    get method returns the value of the variable name
-
-    set method takes a parameter (newName) and assigns it to the name variable.
+    set method takes a new parameter (newName) and assigns it to the name variable.
     this keyword is used to refer to the current object.
+
+    get method returns the value of the variable name
 
 Note: name is declared private, we cannot access it from outside this class 
 
@@ -180,3 +195,4 @@ Add info here
 default integer type is int. To represent a long value, add L as a postfix (after)
 default floating-point type is double. To represent as a float, append F as a postfix.
  */
+
