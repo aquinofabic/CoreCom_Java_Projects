@@ -284,6 +284,22 @@ keyword: implements
 - Interface attributes are by default PUBLIC, STATIC, and FINAL
 - An interface cannot contain a constructor (as it cannot be used to create objects)
 
+WHEN TO USE INTERFACES
+An interface allows somebody to start from scratch to implement your interface or implement your interface in some other
+ code whose original or primary purpose was quite different from your interface. To them, your interface is only
+ incidental, something that have to add on to the their code to be able to use your package. The disadvantage is every
+ method in the interface must be public. You might not want to expose everything.
+
+WHEN TO USE ABSTRACT CLASSES
+An abstract class in contrast, provides more structure. It usually defines some default implementations and provides
+ some tools useful for a full implementation. Code using it must, however, must use your class as the base.
+ Highly inconvenient for other programmers wanting to use your package have already developed their own class
+ hierarchy independently. In Java, a class can inherit from only ONE base class.
+
+WHEN TO USE BOTH
+Implementors can ignore your abstract class if they choose.
+Drawback - calling methods via their interface name is slightly slower than calling them via their abstract class name.
+
 
  */
 
