@@ -25,6 +25,9 @@ Method to create a hierarchy between classes by inheriting from other classes
 superclass (parent) - class being inherited from
 subclass (child) - class that inherits from another class
 
+DATA TYPES
+String, boolean, int, float...
+
  */
 
 
@@ -54,17 +57,19 @@ default - used in interfaces to provide default behaviour for implementing class
 
 // 1.3 Classes and Objects
 /*
+DEFINITIONS:
 Class - template for creating objects
+Field - variable where the scope is the whole class
 
-    FIELD - variable where the scope is the whole class
+FIELD
 public class Person { - we have a concept of a person
     private String name; - it has a name
 
-        CONSTRUCTOR
+    CONSTRUCTOR
     public Person (String name) { - when we create one we have to supply a name
         this.name - name;
     }
-        METHOD
+    METHOD
     public String getName() { - we can then as the person what it's name is
         return name;
     }
@@ -110,7 +115,7 @@ We can call a method using its name
     methodName()
 
 if it has a return type, we can use a method to assign to a variable.
-    int newNumber = returnNewNumber();
+    int newNumber = returnNewNumber();     this is creating an INSTANCE
  */
 
 
@@ -127,7 +132,7 @@ Reference Types: storing complex objects like email messages
 // 1.5 Encapsulation
 /*
 
-Objects "encapsulates data (through fields) and behaviour on the data (through methods) inside themselves
+Objects encapsulate data (through fields) and behaviour on the data (through methods) inside themselves
 These can then be passed as a single unit. Should be a boundary, no worry about how it works internally, we can just use it
 The "interface" of each object is its public members (Methods, Fields, Constructors).
 Chosen such that:
@@ -221,13 +226,66 @@ This example, we cannot create an object of the Animal class:
 
 
 // 1.7 Inheritance
+/*
+keyword: extends
+
+DEFINITIONS:
+Subclass - a class that is derived from another class. (derived, extended or child class).
+Superclass - the class in which the subclass is derived from (base, parent class).
+
+Inheritance allows creating a child class that inherits the fields and methods of the parent class
+    - Implements DRY (Dont Repeat Yourself) principle
+    - Improves code re-usability.
+    - Multi-level inheritance, (child class can have another child class)
+    - Multiple inheritance is NOT ALLOWED in Java (a class cant extend more than one class)
 
 
-// 1.8 Polymorphism
+EXAMPLE:
+
+class Bird {
+    public String outerCovering = "feather";
+}
 
 
-// 1.9 Interfaces
+class Eagle extends Bird {
+    public String name = "eagle";
+    public int lifespan = 15;
+}
 
+
+So, Eagle class extends the Bird parent class. Inherits its fields and methods (outerCovering)
+Eagle class only defines two fields that belong to only Eagle.
+
+
+class TestEagleInheritance {
+    public static void main(String[] args) {
+    Eagle firstEagle = new Eagle();
+    System.out.println("Name:" + firstEagle.name)
+    System.out.println("Outer Covering:" + firstEagle.outerCovering)
+}
+ */
+
+
+// 1.8 Polymorphism - in progress
+/*
+accepts different types of data types
+ */
+
+// 1.9 Interfaces  - in progress
+/*
+Another way to achieve abstraction is with interfaces.
+an interface is a completely "abstract class" that is used to group related methods with empty bodies.
+keyword: implements
+
+- CANNOT be used to create objects
+- Interface methods DO NOT have a body - the body is provided by the "implement" class
+- On implementation of an interface, you must override all of its methods
+- Interface methods are by default ABSTRACT and PUBLIC
+- Interface attributes are by default PUBLIC, STATIC, and FINAL
+- An interface cannot contain a constructor (as it cannot be used to create objects)
+
+
+ */
 
 // Notes
 /*
